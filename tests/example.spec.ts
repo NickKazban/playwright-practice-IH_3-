@@ -11,7 +11,7 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/);
   await expect(page).toHaveTitle(/Playwright/);
   // Timeout 5 sec
-  await page.waitForTimeout(1100);
+  await page.waitForTimeout(5000);
 });
 test('get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
